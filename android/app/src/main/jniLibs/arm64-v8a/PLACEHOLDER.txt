@@ -1,0 +1,1 @@
+Положите сюда libopencv_core.so и libopencv_imgproc.so для arm64-v8a

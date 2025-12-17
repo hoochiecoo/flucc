@@ -1,0 +1,25 @@
+android {
+    namespace "com.example.native_camera"
+    compileSdkVersion 34
+
+    defaultConfig {
+        applicationId "com.example.native_camera"
+        minSdkVersion 21
+        targetSdkVersion 34
+        
+        ndk {
+            abiFilters "arm64-v8a"
+        }
+        externalNativeBuild {
+            cmake {
+                cppFlags "-std=c++17"
+            }
+        }
+    }
+
+    externalNativeBuild {
+        cmake {
+            path "src/main/cpp/CMakeLists.txt"
+        }
+    }
+}
